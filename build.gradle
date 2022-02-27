@@ -3,6 +3,7 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
     id 'maven-publish'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
 }
 
 def projectVersion = "1.0.0-SNAPSHOT"
@@ -38,4 +39,8 @@ publishing {
 
 bootJar {
     enabled = false
+}
+
+shadowJar {
+    archiveClassifier.set('')
 }
