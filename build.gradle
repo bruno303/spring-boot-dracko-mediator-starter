@@ -6,7 +6,7 @@ plugins {
     id 'com.github.johnrengelman.shadow' version '7.1.2'
 }
 
-def projectVersion = '1.0.0'
+def projectVersion = '1.0.1'
 
 group "com.bso"
 version projectVersion
