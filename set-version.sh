@@ -13,4 +13,4 @@ then
   exit 1
 fi
 
-sed -i -E "s/(^def\\s$VARIABLE_NAME\\s=\\s['\"]).*/def $VARIABLE_NAME = '$VERSION'/" build.gradle
+sed -i -E "s/(^val\\s$VARIABLE_NAME\\s=\\s['\"]).*/val $VARIABLE_NAME = '$VERSION'/" build.gradle
