@@ -10,7 +10,7 @@ plugins {
     id("maven-publish")
 }
 
-val projectVersion = "1.1.0"
+val projectVersion = "1.1.0-SNAPSHOT"
 
 group = "com.bso"
 version = projectVersion
@@ -44,4 +44,8 @@ publishing {
 
 tasks.getByName<BootJar>("bootJar") {
     enabled = false
+}
+
+tasks.named<Jar>("jar") {
+    archiveClassifier.set("")
 }
