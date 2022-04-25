@@ -10,7 +10,7 @@ plugins {
     id("maven-publish")
 }
 
-val projectVersion = "1.1.0-SNAPSHOT"
+val projectVersion = "1.1.0"
 
 group = "com.bso"
 version = projectVersion
